@@ -1,0 +1,102 @@
+	.unslider {
+	overflow:auto;
+	margin:0;
+	padding:0;
+	}
+
+	.unslider-wrap {
+	position:relative;
+	text-align: center;
+	}
+
+	.unslider-wrap.unslider-carousel>li {
+	float: left;
+	text-align: center;
+	}
+
+	.unslider-vertical>ul {
+	height:100%;
+	}
+
+	.unslider-vertical li {
+	float:none;
+	width:100%;
+	}
+
+	.unslider-fade {
+	position:relative;
+	}
+
+	.unslider-fade .unslider-wrap li{
+	position:relative;
+	left:0px;
+	top:0px;
+	right:0px;
+	z-index:8;
+	}
+
+	.unslider-fade .unslider-wrap li.unslider-active {
+	z-index:10;
+	}
+
+	.unslider li,.unslider ol,.unslider ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	border:none;
+	}
+
+	.unslider-arrow {
+	box-shadow: 3px 3px 3px #3D3D3D;
+	border-style: ;
+	border-width: ;
+	border-color: ;
+	border-radius: 60px;
+	position:absolute;
+	opacity: 0.2;
+	left:20px;
+	bottom: 200px;
+	width: 50px;
+	height: 50px;
+	z-index:2;
+	cursor: pointer;
+	background-image: url("LeftArrow.png");
+	} 
+	
+	.unslider-arrow:hover {
+	opacity: 1;
+	}
+
+	.unslider-arrow.next {
+	left:auto;
+	right:20px;
+	background-image: url("RightArrow.png");
+	}
+	
+	.unslider-nav ol {
+  list-style: none;
+  text-align: center;
+  position: relative;
+  bottom: 30px;
+	}
+	
+	.unslider-nav ol li {
+	box-shadow: 3px 3px 3px #3D3D3D;
+	display: inline-block;
+	width: 20px;
+	height: 10px;
+	margin: 0 4px;
+	background: transparent;
+	border-radius: 10px;
+	overflow: hidden;
+	text-indent: -999em;
+	border: 2px solid #fff;
+	cursor: pointer;
+	}
+	
+	.unslider-nav ol li.unslider-active {
+  background: #fff;
+  cursor: default;
+	}
+
+	
