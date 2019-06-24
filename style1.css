@@ -18,6 +18,8 @@ body {
 #logo {	
 	position: relative;
 	left: 100px;
+	height: 200px;
+	width: 200px;
 }
 
 #ImageFrame {
