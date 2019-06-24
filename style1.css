@@ -1,5 +1,5 @@
 body {
-	background-color: #252222;
+	background-color: #1b1b1b;
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
@@ -10,7 +10,7 @@ body {
 #Header {
 	height: 100px ;
 	top: 0px;
-	Background-color: rgb(36, 33, 33);
+	Background-color: #313131;
 	padding: 0px;
 	margin: 0px;	
 
