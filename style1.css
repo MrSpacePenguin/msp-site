@@ -1,19 +1,18 @@
+#Header {
+	height: 100px ;
+	top: 0px;
+	Background-color: #181818;
+	padding: 0px;
+	margin: 0px;	
+
+}
+
 body {
-	background-color: #141414;
+	background-color: #333333;
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
 	height: auto;
-}
-
-
-#Header {
-	height: 100px ;
-	top: 0px;
-	Background-color: #3b3b3b;
-	padding: 0px;
-	margin: 0px;	
-
 }
 
 #logo {	
