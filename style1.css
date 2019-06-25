@@ -1,9 +1,9 @@
-#Header {
+header {
 	z-index: 2;
-	
 	position: fixed;
 	height: 10% ;
 	min-height: 50px;
+	max-height: 150px;
 	top: 0px;
 	width: 100%;
 	Background-color: #181818;
@@ -13,22 +13,24 @@
 
 }
 
-.title{
-
-margin-left: 5%;
-
+#title{
+width: auto;
+height: 90%;
+/*background-color: red;*/
 }
 
-h1 {
+
+#title h1 {
 color: white;
 float: left;
-top: 0%;
-size: 10%;
+font-size:190% ;
+margin-top: 1.5%;
+margin-bottom: 1.5%;
 margin-left: 2%
-
 }
 
 #logo {	
+	/*background-color: green;*/
 	float: left;
 	position: relative;
 	margin: ;
