@@ -1,3 +1,5 @@
+
+
 header {
 	z-index: 2;
 	position: fixed;
@@ -21,9 +23,10 @@ height: 90%;
 
 
 #title h1 {
-color: white;
+	font-family: 'Russo One', sans-serif;
+color: rgb(238, 238, 238);
 float: left;
-font-size:190% ;
+font-size:200% ;
 margin-top: 1.5%;
 margin-bottom: 1.5%;
 margin-left: 2%
@@ -34,7 +37,7 @@ margin-left: 2%
 	float: left;
 	position: relative;
 	margin: ;
-	top: 5%;
+	margin-top: .25%;
 	left: 0.5%;
 	height: 90%;
 	width: ;
