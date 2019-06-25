@@ -23,10 +23,10 @@ height: 90%;
 
 
 #title h1 {
-	font-family: 'Russo One', sans-serif;
+font-family: 'Russo One', sans-serif;
 color: rgb(238, 238, 238);
 float: left;
-font-size:200% ;
+font-size: 2em;
 margin-top: 1.5%;
 margin-bottom: 1.5%;
 margin-left: 2%
