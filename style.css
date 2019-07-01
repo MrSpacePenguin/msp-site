@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap');
 
 body {
 overflow-x: hidden;
-font-family: 'Russo One', sans-serif;
+font-family: 'Reem Kufi', sans-serif;
 color: #ffffff;
 background-image: url(Images/background1.png);
 }
@@ -11,7 +13,7 @@ background-image: url(Images/background1.png);
 /*----navbar----*/
 
 .navbar{
-  background: rgba(0,0,0,.9);
+  background: rgba(0,0,0,.5);
   text-transform: uppercase;
 }
 
@@ -32,6 +34,15 @@ background-image: url(Images/background1.png);
   color: #5fccff;
 }
 
+.heading{
+  text-transform: none;
+  position: relative;
+  display:flex;
+  align: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
 /*----navbar----*/
 
 .video-background{
@@ -43,7 +54,7 @@ background-image: url(Images/background1.png);
 
 .caption{
 position: absolute;
-top: 38%;
+top: 50%;
 width: 100%;
 color: white;
 }
@@ -59,6 +70,7 @@ color: white;
   border-width: medium;
   border-radius: 0;
   font-size: 1.1rem;
+  
 
 }
 
