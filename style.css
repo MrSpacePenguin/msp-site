@@ -70,16 +70,27 @@ color: white;
   border-width: medium;
   border-radius: 0;
   font-size: 1.1rem;
-  
-
 }
 
-
-#about img{
-width:50vh;
-
+.social{
+  position: absolute;
+  display: inline-block;
+  white-space: nowrap;
+  top: 90%;
+  width: 100%;
 }
 
+.social-icons{
+  float: right;
+  margin-right: 5%;
+}
+
+.social img{
+  display: inline;
+  height: 2.4rem;
+  padding-left: 1.5vh;
+  padding-bottom: 1vh;
+}
 
 
 @media (max-width: 768 px){
@@ -87,10 +98,7 @@ width:50vh;
     font-size: 1.4rem;
     letter-spacing: .15rem;
     padding-bottom: .5rem;
-  }
-  
-
-
+  } 
 
 
 }
