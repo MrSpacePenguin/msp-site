@@ -18,7 +18,10 @@
             let url = button.data("video");      // Extract url from data-video attribute
             $(this).find("iframe").attr({
                 src : url,
-                allow : "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allow : "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+                autoplay: true
+              
+                
             });
         });
     
@@ -90,17 +93,15 @@
 <div class="caption text-center">
 
 	<!--<h1>Ben Pryor</h1>-->
-	<button type="button" class="btn btn-outline-light btn-lg" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/OBLZtI7mJjs">
-    View Reel
+	<button type="button" class="btn btn-outline-light btn-lg" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/OBLZtI7mJjs" data-autoplay="1">
+    View Reel 
   </button>
 
    <!-- Modal -->
    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
-            
-                
-            
+    
             <div class="modal-body bg-dark p-0">
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe class="embed-responsive-item" allowfullscreen></iframe>
