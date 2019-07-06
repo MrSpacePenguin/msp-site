@@ -3,10 +3,32 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mr Space Penguin</title>
+  <title>Mr Space Penguin</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="css/fixed.css">
+  <link rel="stylesheet" href="css/fixed.css">
+  <script>
+    $(document).ready(function() {
+        // Set iframe attributes when the show instance method is called
+        $("#videoModal").on("show.bs.modal", function(event) {
+            let button = $(event.relatedTarget); // Button that triggered the modal
+            let url = button.data("video");      // Extract url from data-video attribute
+            $(this).find("iframe").attr({
+                src : url,
+                allow : "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            });
+        });
+    
+        // Remove iframe attributes when the modal has finished being hidden from the user
+        $("#videoModal").on("hidden.bs.modal", function() {
+            $("#videoModal iframe").removeAttr("src allow");
+        });
+    });
+    </script>
+    
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
@@ -40,6 +62,7 @@
 <!--Header and Navigation tools-->
 
 
+
 <!--Code to run the landing page video-->
 <div class="video-background">
 	<div class="video-wrap">
@@ -52,47 +75,39 @@
 </div>
 <!--Code to run the landing page video-->
 
+<!--Social Media Icons-->
+<div class="social">
+  <div class="social-icons">
+   <a href="https://www.youtube.com/user/jakeflame1995"><img src="images/Youtube.png"></a>
+   <a href="https://twitter.com/MrSpacePenguin?lang=en"><img src="images/Twitter.png"></a>
+   <a href="https://www.instagram.com/mrspacepenguin/"><img src="images/Instagram.png"></a>
+ </div>
+ 
+ </div>
 
 
 <!--Caption + Link on BG video-->
 <div class="caption text-center">
 
 	<!--<h1>Ben Pryor</h1>-->
-	<button type="button" class="btn btn-outline-light btn-lg" data-toggle="modal" data-target="#mymodal">
+	<button type="button" class="btn btn-outline-light btn-lg" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/OBLZtI7mJjs">
     View Reel
   </button>
 
    <!-- Modal -->
-   <div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+   <div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <iframe width="420" height="315"
-              src="https://www.youtube.com/embed/OBLZtI7mJjs?autoplay=1">
-              </iframe>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+            
+                
+            
+            <div class="modal-body bg-dark p-0">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-<!--Caption + Link on BG video-->
-
-<div class="social">
- <div class="social-icons">
-  <a href="https://www.youtube.com/user/jakeflame1995"><img src="images/Youtube.png"></a>
-  <a href="https://twitter.com/MrSpacePenguin?lang=en"><img src="images/Twitter.png"></a>
-  <a href="https://www.instagram.com/mrspacepenguin/"><img src="images/Instagram.png"></a>
-</div>
-
 </div>
 
 
