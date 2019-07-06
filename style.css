@@ -76,19 +76,19 @@ color: white;
   position: absolute;
   display: inline-block;
   white-space: nowrap;
-  top: 90%;
+  bottom: 5%;
   width: 100%;
 }
 
 .social-icons{
   float: right;
-  margin-right: 5%;
+  margin-right: 3%;
 }
 
 .social img{
   display: inline;
-  height: 2.4rem;
-  padding-left: 1.5vh;
+  height: 2.3rem;
+  padding-left: 3vh;
   padding-bottom: 1vh;
 }
 
