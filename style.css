@@ -6,21 +6,42 @@ body {
 overflow-x: hidden;
 overflow-y:hidden;
 font-family: 'Arvo', serif;
-color: #ffffff;
-background-image: url(Images/background1.png);
+color: #000000;
+background-image: url(images/background1.png);
 }
 
 
 /*----navbar----*/
 
 .navbar{
-  background: rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
 }
 
 .navbar-brand img{
-  height: 3rem;
+  height: 7vh;
+  min-height: 2.5rem;
+  top: 5vh;
 }
+
+.heading{
+  text-transform: none;
+  position: relative;
+  display:flex;
+  align: center;
+  justify-content: center;
+  margin-top: .6rem;
+}
+
+.heading h3{
+  font-size: 150% 
+}
+
+.heading a:hover, a:visited, a:active, a:link{
+text-decoration: none;
+color: white;
+}
+
 
 .navbar-nav li{
   padding-right: .7rem;
@@ -33,15 +54,6 @@ background-image: url(Images/background1.png);
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover{
   color: #5fccff;
-}
-
-.heading{
-  text-transform: none;
-  position: relative;
-  display:flex;
-  align: center;
-  justify-content: center;
-  margin-top: 1rem;
 }
 
 /*----navbar----*/
@@ -78,7 +90,7 @@ color: white;
   position: absolute;
   display: inline-block;
   white-space: nowrap;
-  top: 90%;
+  bottom: 5vh;
   width: 100%;
 }
 
@@ -89,7 +101,8 @@ color: white;
 
 .social img{
   display: inline;
-  height: 2.3rem;
+  height: 4vh;
+  min-height: 1.7rem;
   padding-left: 3vh;
 }
 
