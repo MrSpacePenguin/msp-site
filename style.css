@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
 
 body {
 overflow-x: hidden;
-font-family: 'Reem Kufi', sans-serif;
+font-family: 'Arvo', serif;
 color: #ffffff;
 background-image: url(Images/background1.png);
 }
