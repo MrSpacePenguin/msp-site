@@ -2,12 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 body {
 overflow-x: hidden;
-overflow-y:hidden;
 font-family: 'Arvo', serif;
 color: #000000;
-background-image: url(images/background1.png);
+background-color: black;
 }
 
 
@@ -87,7 +93,8 @@ color: white;
 }
 
 .social{
-  position: absolute;
+  position: fixed;
+  z-index: 2;
   display: inline-block;
   white-space: nowrap;
   bottom: 5vh;
@@ -106,6 +113,19 @@ color: white;
   padding-left: 3vh;
 }
 
+ .page-section {
+  position: relative;
+  top: 44vh;
+  height: 100vh;
+  background-color: black;
+  border: none;
+}
+
+
+
+.section-heading{
+  padding: 10vh;
+}
 
 @media (max-width: 768 px){
   .caption h1{
@@ -115,7 +135,6 @@ color: white;
   } 
 
 
-}
 
 
 /*============ BOOTSTRAP BREAK POINTS:
