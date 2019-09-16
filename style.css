@@ -115,16 +115,29 @@ color: white;
 
  .page-section {
   position: relative;
-  top: 44vh;
-  height: 100vh;
+  top: 45vh;
+  width: auto;
+  padding-bottom: 20vh;
   background-color: black;
   border: none;
 }
 
-
-
 .section-heading{
   padding: 10vh;
+  font-size: 7vh;
+}
+
+#portfolio{
+  background-color: white;
+  }
+
+#portfolio h2{
+  color: black;
+  
+}
+
+#about img{
+  width: 50vh;
 }
 
 @media (max-width: 768 px){
