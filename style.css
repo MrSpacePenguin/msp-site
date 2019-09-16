@@ -116,19 +116,20 @@ color: white;
  .page-section {
   position: relative;
   top: 45vh;
-  width: auto;
+  width: 100%;
   padding-bottom: 20vh;
   background-color: black;
   border: none;
 }
 
 .section-heading{
-  padding: 10vh;
+  padding-top: 10vh;
   font-size: 7vh;
 }
 
 #portfolio{
   background-color: white;
+  color: black;
   }
 
 #portfolio h2{
@@ -139,6 +140,48 @@ color: white;
 #about img{
   width: 50vh;
 }
+
+.carousel-item button{
+  width: 20vh;
+position:static;
+}
+
+
+.carousel-indicators li {
+  position: relative;
+  bottom: 5vh;
+  width: 3vh;
+  min-width: 2rem;
+  height: 3vh;
+  min-height: 2rem;
+  border-radius: 100%;
+  border-color: black;
+  border-width: 10px;
+  margin: 2vh;
+  background-color: #3b3b3b;
+
+}
+ol.carousel-indicators li.active {
+  background: #3b3b3b;
+}
+
+
+.controls-top{
+  color:black;  
+  position: relative;
+  top: 25vh;
+  z-index: 5;
+}
+#prev{
+  float:left;
+  margin-left: 5vh;
+  size: 50%
+}
+#next{
+  float: right;
+  margin-right: 5vh;
+}
+
 
 @media (max-width: 768 px){
   .caption h1{
