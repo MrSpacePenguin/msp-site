@@ -12,7 +12,7 @@ html {
 body {
 overflow-x: hidden;
 font-family: 'Arvo', serif;
-color: #000000;
+color: #111111;
 background-color: black;
 }
 
@@ -20,13 +20,13 @@ background-color: black;
 /*----navbar----*/
 
 .navbar{
-  background: rgba(0, 0, 0, 0.5);
+  background: #1f1f1f;
   text-transform: uppercase;
 }
 
 .navbar-brand img{
-  height: 7vh;
-  min-height: 2.5rem;
+  height: 5vh;
+  min-height: 2rem;
   top: 5vh;
 }
 
@@ -117,7 +117,7 @@ color: white;
   position: relative;
   top: 45vh;
   width: 100%;
-  padding-bottom: 20vh;
+  padding-bottom: 10vh;
   background-color: black;
   border: none;
 }
@@ -183,6 +183,7 @@ ol.carousel-indicators li.active {
 }
 
 
+
 @media (max-width: 768 px){
   .caption h1{
     font-size: 1.4rem;
@@ -190,7 +191,7 @@ ol.carousel-indicators li.active {
     padding-bottom: .5rem;
   } 
 
-
+}
 
 
 /*============ BOOTSTRAP BREAK POINTS:
